@@ -13,86 +13,96 @@ class LoginView extends GetView<LoginController> {
       backgroundColor: Colors.white,
       body: Stack(
         children: [
-          Container(
-            padding: EdgeInsets.symmetric(horizontal: 10,vertical: 30),
-            margin: EdgeInsets.only(top: 275,left: 65,right: 65),
-            width: double.infinity,
-            height: 300,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(20),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black38,
-                    spreadRadius: 0.1,
-                    blurRadius: 5
-                  ),
-                ]
-            ),
-            child: Column(
-              children: [
-                Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(right: 10),
-                      child: Image.asset(
+          SingleChildScrollView(
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 10,vertical: 30),
+              margin: EdgeInsets.only(top: 275,left: 40,right: 40),
+              width: double.infinity,
+              height: 300,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(20),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black38,
+                      spreadRadius: 0.1,
+                      blurRadius: 5
+                    ),
+                  ]
+              ),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Image.asset(
                         'assets/images/SplashLogo.png',
-                        width: 50,
+                        width: 90,
                         height: 50,
                       ),
-                    ),
-                    Expanded(
-                      child: Text(
+
+                      Text(
                         "Object Detection",
-                        textAlign: TextAlign.left,
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 25,
                           color: Colors.green,
                         ),
                       ),
-                    ),
-                  ],
-                ),
-                TextField(
-                  decoration: InputDecoration(
-                    hintText: "Email",
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    contentPadding: EdgeInsets.symmetric(vertical: 5,horizontal: 20),
+                    ],
                   ),
-                ),
-                SizedBox(height: 10,),
-                TextField(
-                  decoration: InputDecoration(
-                    hintText: "Password",
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    contentPadding: EdgeInsets.symmetric(vertical: 2,horizontal: 20),
-                  ),
-                ),
-                SizedBox(height: 15,),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(context, 
-                    MaterialPageRoute(builder: (context) => HomeView(),)
-                    );
-                  },
-                  child: Text("Login"),
-                  style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    backgroundColor: Colors.green,
-                    minimumSize: Size(300, 40)
-                  ),
-                )
-              ]),
 
+
+                  TextField(
+                    decoration: InputDecoration(
+                      hintText: "Email",
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      contentPadding: EdgeInsets.symmetric(vertical: 5,horizontal: 20),
+                    ),
+                  ),
+                  SizedBox(height: 10,),
+                  TextField(
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      hintText: "Password",
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      contentPadding: EdgeInsets.symmetric(vertical: 2, horizontal:20),
+                    ),
+                    // decoration: InputDecoration(
+                    //   hintText: "Password",
+                    //   border: OutlineInputBorder(
+                    //     borderRadius: BorderRadius.circular(20),
+                    //   ),
+                    //   contentPadding: EdgeInsets.symmetric(vertical: 2,horizontal: 20),
+                    // ),
+                  ),
+                  SizedBox(height: 15,),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: (context) => HomeView(),)
+                      );
+                    },
+                    child: Text("Login"),
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      backgroundColor: Colors.green,
+                      minimumSize: Size(300, 40)
+                    ),
+                  )
+                ]),
+
+            ),
           )
         ]
       )
     );
   }
 }
+
