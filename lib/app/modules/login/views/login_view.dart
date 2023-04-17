@@ -1,8 +1,7 @@
+// Berhasil memasukkan login 
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
 import 'package:object_detection_app/app/modules/home/views/home_view.dart';
-
 import '../controllers/login_controller.dart';
 
 class LoginView extends GetView<LoginController> {
