@@ -10,3 +10,14 @@ final splashTitle = TextStyle(
 );
 
 // Login Screen
+final objectHeader = TextStyle(
+  fontSize: SizeConfig.blockHorizontal! * 6,
+  fontWeight: FontWeight.w700,
+  color: CaribbeanGreen,
+);
+
+final loginButton = TextStyle(
+  fontSize: SizeConfig.blockHorizontal! * 5,
+  fontWeight: FontWeight.w700,
+  color: BgWhite,
+);
