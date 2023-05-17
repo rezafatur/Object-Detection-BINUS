@@ -21,3 +21,22 @@ final loginButton = TextStyle(
   fontWeight: FontWeight.w700,
   color: BgWhite,
 );
+
+// Homepage Screen
+final nameHeader = TextStyle(
+  fontSize: SizeConfig.blockHorizontal! * 5,
+  fontWeight: FontWeight.w700,
+  color: DarkBlack,
+);
+
+final campusLocation = TextStyle(
+  fontSize: SizeConfig.blockHorizontal! * 7,
+  fontWeight: FontWeight.bold,
+  color: DarkBlack,
+);
+
+final safeStatus = TextStyle(
+  fontSize: SizeConfig.blockHorizontal! * 7,
+  fontWeight: FontWeight.w700,
+  color: BgWhite,
+);
