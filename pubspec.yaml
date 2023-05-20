@@ -13,6 +13,7 @@ dependencies:
   flutter_native_splash: ^2.2.19
   flutter_map: ^4.0.0
   latlong2: ^0.8.1
+  image_picker: ^0.8.7+5
 
 dev_dependencies:
   flutter_lints: ^2.0.0

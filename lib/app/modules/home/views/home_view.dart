@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:get/get.dart';
 import 'package:latlong2/latlong.dart';
+import 'package:object_detection_app/app/modules/bahaya/views/bahaya_view.dart';
 import '../../../../core/theme/colors.dart';
 import '../../../../core/theme/text_theme.dart';
 import '../../../../core/utils/size.configs.dart';
@@ -17,9 +18,6 @@ class HomeView extends GetView<HomeController> {
     double sizeW = SizeConfig.screenWidth!;
 
     return Scaffold(
-      // appBar: AppBar(
-      //   title: const Text('Home'),
-      // ),
       body: Stack(
         children: [
           FlutterMap(
@@ -39,7 +37,7 @@ class HomeView extends GetView<HomeController> {
           ),
           Padding(
             padding: const EdgeInsets.symmetric(
-              vertical: 25,
+              vertical: 50,
               horizontal: 25,
             ),
             child: Row(
@@ -117,35 +115,45 @@ class HomeView extends GetView<HomeController> {
                   SizedBox(
                     height: sizeH * 0.05,
                   ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 25,
-                    ),
-                    child: Container(
-                      width: sizeW,
-                      decoration: BoxDecoration(
-                        color: CaribbeanGreen,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(
-                          vertical: 10,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => BahayaView(),
                         ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Image.asset(
-                              'assets/images/HomeSafe.png',
-                              height: sizeH * 0.03,
-                            ),
-                            SizedBox(
-                              width: sizeW * 0.025,
-                            ),
-                            Text(
-                              "Aman",
-                              style: safeStatus,
-                            ),
-                          ],
+                      );
+                    },
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 25,
+                      ),
+                      child: Container(
+                        width: sizeW,
+                        decoration: BoxDecoration(
+                          color: CaribbeanGreen,
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                            vertical: 10,
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Image.asset(
+                                'assets/images/HomeSafe.png',
+                                height: sizeH * 0.03,
+                              ),
+                              SizedBox(
+                                width: sizeW * 0.025,
+                              ),
+                              Text(
+                                "Aman",
+                                style: safeStatus,
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
