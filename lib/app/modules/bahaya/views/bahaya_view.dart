@@ -10,6 +10,7 @@ import '../../../../core/theme/colors.dart';
 import '../../../../core/theme/text_theme.dart';
 import '../../../../core/utils/size.configs.dart';
 import '../../home/views/home_view.dart';
+import '../../emergency/views/emergency_view.dart';
 import '../controllers/bahaya_controller.dart';
 
 class BahayaView extends GetView<BahayaController> {
@@ -232,7 +233,7 @@ class BahayaView extends GetView<BahayaController> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const HomeView(),
+                  builder: (context) => const EmergencyView(),
                 ),
               );
             },

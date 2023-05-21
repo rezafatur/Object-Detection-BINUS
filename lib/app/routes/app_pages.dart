@@ -2,6 +2,8 @@ import 'package:get/get.dart';
 
 import '../modules/bahaya/bindings/bahaya_binding.dart';
 import '../modules/bahaya/views/bahaya_view.dart';
+import '../modules/emergency/bindings/emergency_binding.dart';
+import '../modules/emergency/views/emergency_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
@@ -38,6 +40,11 @@ class AppPages {
       name: _Paths.BAHAYA,
       page: () => const BahayaView(),
       binding: BahayaBinding(),
+    ),
+    GetPage(
+      name: _Paths.EMERGENCY,
+      page: () => const EmergencyView(),
+      binding: EmergencyBinding(),
     ),
   ];
 }

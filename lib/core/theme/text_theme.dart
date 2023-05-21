@@ -9,7 +9,7 @@ final splashTitle = TextStyle(
   color: DarkBlack,
 );
 
-// Login Screen
+// Login Page
 final objectHeader = TextStyle(
   fontSize: SizeConfig.blockHorizontal! * 6,
   fontWeight: FontWeight.w700,
@@ -22,7 +22,7 @@ final loginButton = TextStyle(
   color: BgWhite,
 );
 
-// Homepage Screen
+// Homepage
 final nameHeader = TextStyle(
   fontSize: SizeConfig.blockHorizontal! * 5,
   fontWeight: FontWeight.w700,
@@ -41,7 +41,7 @@ final safeStatus = TextStyle(
   color: BgWhite,
 );
 
-// Bahaya Screen
+// Bahaya Page
 final askingHelp = TextStyle(
   fontSize: SizeConfig.blockHorizontal! * 5,
   fontWeight: FontWeight.bold,
@@ -97,6 +97,37 @@ final emergencyStatus = TextStyle(
 );
 
 final heningkanStatus = TextStyle(
+  fontSize: SizeConfig.blockHorizontal! * 5,
+  fontWeight: FontWeight.w700,
+  color: DarkBlack,
+);
+
+// Emergency Page
+final emergencyHeader = TextStyle(
+  fontSize: SizeConfig.blockHorizontal! * 6,
+  fontWeight: FontWeight.w700,
+  color: BgWhite,
+);
+
+final emergencyInfo = TextStyle(
+  fontSize: SizeConfig.blockHorizontal! * 6,
+  fontWeight: FontWeight.bold,
+  color: DarkBlack,
+);
+
+final emergencyBantuan = TextStyle(
+  fontSize: SizeConfig.blockHorizontal! * 5,
+  fontWeight: FontWeight.w700,
+  color: BgWhite,
+);
+
+final emergencySensor = TextStyle(
+  fontSize: SizeConfig.blockHorizontal! * 5,
+  fontWeight: FontWeight.w700,
+  color: DarkBlack,
+);
+
+final emergencyTutup = TextStyle(
   fontSize: SizeConfig.blockHorizontal! * 5,
   fontWeight: FontWeight.w700,
   color: DarkBlack,
