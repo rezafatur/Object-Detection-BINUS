@@ -1,16 +1,12 @@
-# object_detection_app
+# Sinamlab - Object Detection BINUS
 
-A new Flutter project.
+![Thumbnail Object Detection](./Thumbnail_Object_Detection.jpg)
+Aplikasi berbasis Android yang digunakan oleh pihak keamanan BINUS dengan tujuan utama untuk menerima notifikasi alarm yang berbunyi serta mengecek langsung ke lokasi dan memberi laporan.
 
-## Getting Started
+## Aplikasi
 
-This project is a starting point for a Flutter application.
+v1.0 : Coming Soon.
 
-A few resources to get you started if this is your first Flutter project:
+## Dokumentasi / Demo
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+YouTube : Coming Soon.
