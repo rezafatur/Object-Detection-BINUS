@@ -16,7 +16,7 @@ import '../controllers/bahaya_controller.dart';
 class BahayaView extends GetView<BahayaController> {
   const BahayaView({Key? key}) : super(key: key);
 
-  void _showEmergencyDialog(BuildContext context) {
+  void showEmergencyDialog(BuildContext context) {
     SizeConfig().init(context);
     double sizeH = SizeConfig.screenHeight!;
     double sizeW = SizeConfig.screenWidth!;
@@ -35,14 +35,14 @@ class BahayaView extends GetView<BahayaController> {
               children: [
                 Text(
                   "Permintaan Bantuan",
-                  style: askingHelp,
+                  style: textLargeBlackBold,
                 ),
                 SizedBox(
                   height: sizeH * 0.01,
                 ),
                 Text(
                   "Telah Dikirim",
-                  style: alreadySent,
+                  style: textLargeBlack400,
                 ),
                 SizedBox(
                   height: sizeH * 0.025,
@@ -68,7 +68,7 @@ class BahayaView extends GetView<BahayaController> {
                       child: Text(
                         "Tutup",
                         textAlign: TextAlign.center,
-                        style: closedInfo,
+                        style: textLargeBlack700,
                       ),
                     ),
                   ),
@@ -104,7 +104,7 @@ class BahayaView extends GetView<BahayaController> {
                   children: [
                     Text(
                       "Keterangan",
-                      style: heningkanHeader,
+                      style: textLargeBlack700,
                     ),
                     SizedBox(
                       height: sizeH * 0.025,
@@ -189,7 +189,7 @@ class BahayaView extends GetView<BahayaController> {
                           child: Text(
                             "Submit",
                             textAlign: TextAlign.center,
-                            style: heningkanSubmit,
+                            style: textLargeWhite700,
                           ),
                         ),
                       ),
@@ -247,7 +247,7 @@ class BahayaView extends GetView<BahayaController> {
                 decoration: BoxDecoration(
                   color: MediumVermilion,
                   borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       color: SilverFoil,
                       spreadRadius: 2,
@@ -272,7 +272,7 @@ class BahayaView extends GetView<BahayaController> {
                       Text(
                         "Bahaya",
                         textAlign: TextAlign.center,
-                        style: warningStatus,
+                        style: textExtraLargeWhite700,
                       ),
                     ],
                   ),
@@ -297,7 +297,7 @@ class BahayaView extends GetView<BahayaController> {
                 children: [
                   Text(
                     "Ada Yang Mendekat",
-                    style: infoHeader,
+                    style: textExtraLargeBlackBold,
                   ),
                   SizedBox(
                     height: sizeH * 0.025,
@@ -337,14 +337,14 @@ class BahayaView extends GetView<BahayaController> {
                                             child: Text(
                                               SensorContents[index].sensor,
                                               textAlign: TextAlign.start,
-                                              style: sensorStatus,
+                                              style: textLargeBlack700,
                                             ),
                                           ),
                                           Expanded(
                                             child: Text(
                                               SensorContents[index].time,
                                               textAlign: TextAlign.end,
-                                              style: sensorStatus,
+                                              style: textLargeBlack700,
                                             ),
                                           ),
                                         ],
@@ -366,7 +366,7 @@ class BahayaView extends GetView<BahayaController> {
                         ),
                         GestureDetector(
                           onTap: () {
-                            _showEmergencyDialog(context);
+                            showEmergencyDialog(context);
                           },
                           child: Container(
                             width: sizeW,
@@ -381,7 +381,7 @@ class BahayaView extends GetView<BahayaController> {
                               child: Text(
                                 "Emergency",
                                 textAlign: TextAlign.center,
-                                style: emergencyStatus,
+                                style: textLargeWhite700,
                               ),
                             ),
                           ),
@@ -410,7 +410,7 @@ class BahayaView extends GetView<BahayaController> {
                               child: Text(
                                 "Heningkan",
                                 textAlign: TextAlign.center,
-                                style: heningkanStatus,
+                                style: textLargeBlack700,
                               ),
                             ),
                           ),

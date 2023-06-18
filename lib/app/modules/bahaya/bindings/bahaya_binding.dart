@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-
 import '../controllers/bahaya_controller.dart';
 
 class BahayaBinding extends Bindings {

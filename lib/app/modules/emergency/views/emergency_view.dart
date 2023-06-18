@@ -70,7 +70,7 @@ class EmergencyView extends GetView<EmergencyController> {
                     Text(
                       "Emergency",
                       textAlign: TextAlign.center,
-                      style: emergencyHeader,
+                      style: textExtraLargeWhite700,
                     ),
                   ],
                 ),
@@ -101,7 +101,7 @@ class EmergencyView extends GetView<EmergencyController> {
                   ),
                   Text(
                     "John Smith",
-                    style: emergencyInfo,
+                    style: textExtraLargeBlackBold,
                   ),
                   SizedBox(
                     height: sizeH * 0.025,
@@ -125,7 +125,7 @@ class EmergencyView extends GetView<EmergencyController> {
                             child: Text(
                               "Butuh Bantuan",
                               textAlign: TextAlign.center,
-                              style: emergencyBantuan,
+                              style: textLargeWhite700,
                             ),
                           ),
                         ),
@@ -161,14 +161,14 @@ class EmergencyView extends GetView<EmergencyController> {
                                             child: Text(
                                               SensorContents[index].sensor,
                                               textAlign: TextAlign.start,
-                                              style: emergencySensor,
+                                              style: textLargeBlack700,
                                             ),
                                           ),
                                           Expanded(
                                             child: Text(
                                               SensorContents[index].time,
                                               textAlign: TextAlign.end,
-                                              style: emergencySensor,
+                                              style: textLargeBlack700,
                                             ),
                                           ),
                                         ],
@@ -214,7 +214,7 @@ class EmergencyView extends GetView<EmergencyController> {
                               child: Text(
                                 "Tutup",
                                 textAlign: TextAlign.center,
-                                style: emergencyTutup,
+                                style: textLargeBlack700,
                               ),
                             ),
                           ),

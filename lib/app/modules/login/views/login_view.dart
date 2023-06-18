@@ -22,10 +22,10 @@ class LoginView extends GetView<LoginController> {
         children: [
           Center(
             child: Container(
-              padding: EdgeInsets.symmetric(
+              padding: const EdgeInsets.symmetric(
                 horizontal: 20,
               ),
-              margin: EdgeInsets.only(
+              margin: const EdgeInsets.only(
                 left: 45,
                 right: 45,
               ),
@@ -33,7 +33,7 @@ class LoginView extends GetView<LoginController> {
               decoration: BoxDecoration(
                 color: BgWhite,
                 borderRadius: BorderRadius.circular(20),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     color: SilverFoil,
                     spreadRadius: 2,
@@ -44,6 +44,7 @@ class LoginView extends GetView<LoginController> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  // Logo Object Detection
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -53,24 +54,28 @@ class LoginView extends GetView<LoginController> {
                       ),
                       Text(
                         "Object Detection",
-                        style: objectHeader,
+                        style: textExtraLargeCaribbeanGreen700,
                       ),
                     ],
                   ),
+
+                  // Textfield untuk Email
                   TextField(
                     decoration: InputDecoration(
                       hintText: "Email",
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      contentPadding: EdgeInsets.symmetric(
+                      contentPadding: const EdgeInsets.symmetric(
                         horizontal: 15,
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
+
+                  // Textfield untuk Password
                   TextField(
                     obscureText: true,
                     decoration: InputDecoration(
@@ -78,34 +83,36 @@ class LoginView extends GetView<LoginController> {
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      contentPadding: EdgeInsets.symmetric(
+                      contentPadding: const EdgeInsets.symmetric(
                         horizontal: 15,
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
-                  Container(
+
+                  // Button atau Tombol "Login"
+                  SizedBox(
                     width: sizeW,
                     child: ElevatedButton(
                       onPressed: () {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => HomeView(),
+                            builder: (context) => const HomeView(),
                           ),
                         );
                       },
-                      child: Text(
-                        "Login",
-                        style: loginButton,
-                      ),
                       style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
                         ),
                         backgroundColor: CaribbeanGreen,
+                      ),
+                      child: Text(
+                        "Login",
+                        style: textLargeWhite700,
                       ),
                     ),
                   ),

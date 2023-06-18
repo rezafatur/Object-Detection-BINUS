@@ -2,133 +2,58 @@ import 'package:flutter/material.dart';
 import 'package:object_detection_app/core/theme/colors.dart';
 import 'package:object_detection_app/core/utils/size.configs.dart';
 
-// Splash Screen
-final splashTitle = TextStyle(
-  fontSize: SizeConfig.blockHorizontal! * 5,
-  fontWeight: FontWeight.w400,
-  color: DarkBlack,
-);
-
-// Login Page
-final objectHeader = TextStyle(
-  fontSize: SizeConfig.blockHorizontal! * 6,
-  fontWeight: FontWeight.w700,
+// Text with Caribbean Green (Large, Medium, and Small)
+final textExtraLargeCaribbeanGreen700 = TextStyle(
   color: CaribbeanGreen,
-);
-
-final loginButton = TextStyle(
-  fontSize: SizeConfig.blockHorizontal! * 5,
-  fontWeight: FontWeight.w700,
-  color: BgWhite,
-);
-
-// Homepage
-final nameHeader = TextStyle(
-  fontSize: SizeConfig.blockHorizontal! * 5,
-  fontWeight: FontWeight.w700,
-  color: DarkBlack,
-);
-
-final campusLocation = TextStyle(
   fontSize: SizeConfig.blockHorizontal! * 6,
-  fontWeight: FontWeight.bold,
-  color: DarkBlack,
+  fontWeight: FontWeight.w700,
 );
 
-final safeStatus = TextStyle(
+// Text with White Color (Large, Medium, and Small)
+final textLargeWhite700 = TextStyle(
+  color: BgWhite,
   fontSize: SizeConfig.blockHorizontal! * 5,
   fontWeight: FontWeight.w700,
+);
+
+final textExtraLargeWhite700 = TextStyle(
   color: BgWhite,
+  fontSize: SizeConfig.blockHorizontal! * 6,
+  fontWeight: FontWeight.w700,
 );
 
-// Bahaya Page
-final askingHelp = TextStyle(
-  fontSize: SizeConfig.blockHorizontal! * 5,
+final textMediumWhiteBold = TextStyle(
+  color: BgWhite,
+  fontSize: SizeConfig.blockHorizontal! * 4,
   fontWeight: FontWeight.bold,
-  color: DarkBlack,
 );
 
-final alreadySent = TextStyle(
+// Text with Black Color (Large, Medium, and Small)
+final textMediumBlack = TextStyle(
+  color: DarkBlack,
+  fontSize: SizeConfig.blockHorizontal! * 4,
+);
+
+final textLargeBlack400 = TextStyle(
+  color: DarkBlack,
   fontSize: SizeConfig.blockHorizontal! * 5,
   fontWeight: FontWeight.w400,
-  color: DarkBlack,
 );
 
-final closedInfo = TextStyle(
+final textLargeBlack700 = TextStyle(
+  color: DarkBlack,
   fontSize: SizeConfig.blockHorizontal! * 5,
   fontWeight: FontWeight.w700,
+);
+
+final textLargeBlackBold = TextStyle(
   color: DarkBlack,
+  fontSize: SizeConfig.blockHorizontal! * 5,
+  fontWeight: FontWeight.bold,
 );
 
-final heningkanHeader = TextStyle(
-  fontSize: SizeConfig.blockHorizontal! * 5,
-  fontWeight: FontWeight.w700,
+final textExtraLargeBlackBold = TextStyle(
   color: DarkBlack,
-);
-
-final heningkanSubmit = TextStyle(
-  fontSize: SizeConfig.blockHorizontal! * 5,
-  fontWeight: FontWeight.w700,
-  color: BgWhite,
-);
-
-final warningStatus = TextStyle(
-  fontSize: SizeConfig.blockHorizontal! * 6,
-  fontWeight: FontWeight.w700,
-  color: BgWhite,
-);
-
-final infoHeader = TextStyle(
   fontSize: SizeConfig.blockHorizontal! * 6,
   fontWeight: FontWeight.bold,
-  color: DarkBlack,
-);
-
-final sensorStatus = TextStyle(
-  fontSize: SizeConfig.blockHorizontal! * 5,
-  fontWeight: FontWeight.w700,
-  color: DarkBlack,
-);
-
-final emergencyStatus = TextStyle(
-  fontSize: SizeConfig.blockHorizontal! * 5,
-  fontWeight: FontWeight.w700,
-  color: BgWhite,
-);
-
-final heningkanStatus = TextStyle(
-  fontSize: SizeConfig.blockHorizontal! * 5,
-  fontWeight: FontWeight.w700,
-  color: DarkBlack,
-);
-
-// Emergency Page
-final emergencyHeader = TextStyle(
-  fontSize: SizeConfig.blockHorizontal! * 6,
-  fontWeight: FontWeight.w700,
-  color: BgWhite,
-);
-
-final emergencyInfo = TextStyle(
-  fontSize: SizeConfig.blockHorizontal! * 6,
-  fontWeight: FontWeight.bold,
-  color: DarkBlack,
-);
-
-final emergencyBantuan = TextStyle(
-  fontSize: SizeConfig.blockHorizontal! * 5,
-  fontWeight: FontWeight.w700,
-  color: BgWhite,
-);
-
-final emergencySensor = TextStyle(
-  fontSize: SizeConfig.blockHorizontal! * 5,
-  fontWeight: FontWeight.w700,
-  color: DarkBlack,
-);
-
-final emergencyTutup = TextStyle(
-  fontSize: SizeConfig.blockHorizontal! * 5,
-  fontWeight: FontWeight.w700,
-  color: DarkBlack,
 );
