@@ -4,14 +4,13 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:get/get.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:object_detection_app/app/modules/bahaya/views/bahaya_view.dart';
-import 'package:object_detection_app/app/routes/app_pages.dart';
 import '../../../../core/theme/colors.dart';
 import '../../../../core/theme/text_theme.dart';
 import '../../../../core/utils/size.configs.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
-  const HomeView({Key? key}) : super(key: key);
+  HomeView({Key? key}) : super(key: key);
 
   // Konfirmasi Keluar Akun
   void showLogoutConfirmation(BuildContext context) {
@@ -77,9 +76,7 @@ class HomeView extends GetView<HomeController> {
                     Expanded(
                       child: GestureDetector(
                         onTap: () {
-                          Get.offNamed(
-                            Routes.LOGIN,
-                          );
+                          controller.logoutUser();
                         },
                         child: Container(
                           decoration: BoxDecoration(

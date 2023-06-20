@@ -172,7 +172,7 @@ class BahayaView extends GetView<BahayaController> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const HomeView(),
+                            builder: (context) => HomeView(),
                           ),
                         );
                       },

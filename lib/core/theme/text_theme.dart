@@ -57,3 +57,10 @@ final textExtraLargeBlackBold = TextStyle(
   fontSize: SizeConfig.blockHorizontal! * 6,
   fontWeight: FontWeight.bold,
 );
+
+// Text Error Message Color (Large, Medium, and Small)
+final textErrorMessageBold = TextStyle(
+  color: MediumVermilion,
+  fontSize: SizeConfig.blockHorizontal! * 3.5,
+  fontWeight: FontWeight.bold,
+);

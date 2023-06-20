@@ -193,7 +193,7 @@ class EmergencyView extends GetView<EmergencyController> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const HomeView(),
+                                builder: (context) => HomeView(),
                               ),
                             );
                           },
