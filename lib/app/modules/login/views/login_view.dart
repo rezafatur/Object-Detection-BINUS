@@ -1,4 +1,3 @@
-// Berhasil memasukkan login
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:object_detection_app/core/theme/colors.dart';
@@ -131,9 +130,14 @@ class LoginView extends GetView<LoginController> {
 
               // Pesan Error
               Obx(
-                () => Text(
-                  controller.errorMessage.value,
-                  style: textErrorMessageBold,
+                () => Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 45,
+                  ),
+                  child: Text(
+                    controller.errorMessage.value,
+                    style: textErrorMessageBold,
+                  ),
                 ),
               ),
             ],

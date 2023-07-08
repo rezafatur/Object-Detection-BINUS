@@ -18,7 +18,8 @@ class LoginController extends GetxController {
         errorMessage.value = "Email atau Password Salah";
       }
     } catch (e) {
-      errorMessage.value = e.toString();
+      print(e);
+      errorMessage.value = "Login Error";
     } finally {
       isLoading.value = false;
     }
