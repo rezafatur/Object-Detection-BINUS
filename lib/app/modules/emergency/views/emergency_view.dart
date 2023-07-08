@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:get/get.dart';
 import 'package:latlong2/latlong.dart';
-import 'package:object_detection_app/app/modules/home/views/home_view.dart';
+import 'package:object_detection_app/app/modules/bahaya/views/bahaya_view.dart';
 import '../../../../core/theme/colors.dart';
 import '../../../../core/theme/text_theme.dart';
 import '../../../../core/utils/size.configs.dart';
@@ -20,6 +20,7 @@ class EmergencyView extends GetView<EmergencyController> {
     return Scaffold(
       body: Stack(
         children: [
+          // Flutter Map - Open Street Map
           FlutterMap(
             options: MapOptions(
               center: LatLng(-7.939919, 112.681268),
@@ -35,6 +36,8 @@ class EmergencyView extends GetView<EmergencyController> {
               ),
             ],
           ),
+
+          // Section 1 - Navigasi Atas
           Padding(
             padding: const EdgeInsets.symmetric(
               vertical: 50,
@@ -77,6 +80,8 @@ class EmergencyView extends GetView<EmergencyController> {
               ),
             ),
           ),
+
+          // Section 2 - Navigasi Bawah
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
@@ -92,6 +97,7 @@ class EmergencyView extends GetView<EmergencyController> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  // Icon Profile
                   Image.asset(
                     'assets/images/EmergencyProfile.png',
                     height: sizeH * 0.1,
@@ -99,6 +105,8 @@ class EmergencyView extends GetView<EmergencyController> {
                   SizedBox(
                     height: sizeH * 0.01,
                   ),
+
+                  // Nama Security
                   Text(
                     "John Smith",
                     style: textExtraLargeBlackBold,
@@ -106,12 +114,15 @@ class EmergencyView extends GetView<EmergencyController> {
                   SizedBox(
                     height: sizeH * 0.025,
                   ),
+
+                  // Butuh Bantuan, Sensor, dan Tutup
                   Padding(
                     padding: const EdgeInsets.symmetric(
                       horizontal: 25,
                     ),
                     child: Column(
                       children: [
+                        // Text Butuh Bantuan
                         Container(
                           width: sizeW,
                           decoration: BoxDecoration(
@@ -132,6 +143,8 @@ class EmergencyView extends GetView<EmergencyController> {
                         SizedBox(
                           height: sizeH * 0.01,
                         ),
+
+                        // Sensor
                         SingleChildScrollView(
                           child: SizedBox(
                             height: sizeH * 0.15,
@@ -188,12 +201,14 @@ class EmergencyView extends GetView<EmergencyController> {
                         SizedBox(
                           height: sizeH * 0.05,
                         ),
+
+                        // Button atau Tombol "Tutup"
                         GestureDetector(
                           onTap: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => HomeView(),
+                                builder: (context) => const BahayaView(),
                               ),
                             );
                           },

@@ -10,7 +10,7 @@ import '../../../../core/utils/size.configs.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
-  HomeView({Key? key}) : super(key: key);
+  const HomeView({Key? key}) : super(key: key);
 
   // Konfirmasi Keluar Akun
   void showLogoutConfirmation(BuildContext context) {

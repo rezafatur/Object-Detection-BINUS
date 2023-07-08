@@ -102,6 +102,7 @@ class BahayaView extends GetView<BahayaController> {
                 content: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
+                    // Header
                     Text(
                       "Keterangan",
                       style: textLargeBlack700,
@@ -109,6 +110,8 @@ class BahayaView extends GetView<BahayaController> {
                     SizedBox(
                       height: sizeH * 0.025,
                     ),
+
+                    // Textfield Keterangan
                     TextField(
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
@@ -122,6 +125,8 @@ class BahayaView extends GetView<BahayaController> {
                     SizedBox(
                       height: sizeH * 0.025,
                     ),
+
+                    // Upload Gambar
                     GestureDetector(
                       onTap: () async {
                         final picker = ImagePicker();
@@ -167,6 +172,8 @@ class BahayaView extends GetView<BahayaController> {
                     SizedBox(
                       height: sizeH * 0.025,
                     ),
+
+                    // Button atau Tombol "Submit"
                     GestureDetector(
                       onTap: () {
                         Navigator.push(
@@ -194,6 +201,37 @@ class BahayaView extends GetView<BahayaController> {
                         ),
                       ),
                     ),
+                    SizedBox(
+                      height: sizeH * 0.025,
+                    ),
+
+                    // Button atau Tombol "Cancel"
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pop();
+                      },
+                      child: Container(
+                        width: sizeW,
+                        decoration: BoxDecoration(
+                          color: BgWhite,
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            color: DarkBlack,
+                            width: 2,
+                          ),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                            vertical: 10,
+                          ),
+                          child: Text(
+                            "Cancel",
+                            textAlign: TextAlign.center,
+                            style: textLargeBlack700,
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               );
@@ -213,6 +251,7 @@ class BahayaView extends GetView<BahayaController> {
     return Scaffold(
       body: Stack(
         children: [
+          // Flutter Map - Open Street Map
           FlutterMap(
             options: MapOptions(
               center: LatLng(-7.939919, 112.681268),
@@ -228,6 +267,8 @@ class BahayaView extends GetView<BahayaController> {
               ),
             ],
           ),
+
+          // Button atau Tombol "Bahaya"
           GestureDetector(
             onTap: () {
               Navigator.push(
@@ -280,6 +321,8 @@ class BahayaView extends GetView<BahayaController> {
               ),
             ),
           ),
+
+          // Navigasi Bawah
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
@@ -295,6 +338,7 @@ class BahayaView extends GetView<BahayaController> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  // Text "Ada Yang Mendekat"
                   Text(
                     "Ada Yang Mendekat",
                     style: textExtraLargeBlackBold,
@@ -302,12 +346,15 @@ class BahayaView extends GetView<BahayaController> {
                   SizedBox(
                     height: sizeH * 0.025,
                   ),
+
+                  // Sensor, Emergency, dan Heningkan
                   Padding(
                     padding: const EdgeInsets.symmetric(
                       horizontal: 25,
                     ),
                     child: Column(
                       children: [
+                        // Sensor
                         SingleChildScrollView(
                           child: SizedBox(
                             height: sizeH * 0.15,
@@ -364,6 +411,8 @@ class BahayaView extends GetView<BahayaController> {
                         SizedBox(
                           height: sizeH * 0.025,
                         ),
+
+                        // Button atau Tombol "Emergency"
                         GestureDetector(
                           onTap: () {
                             showEmergencyDialog(context);
@@ -389,6 +438,8 @@ class BahayaView extends GetView<BahayaController> {
                         SizedBox(
                           height: sizeH * 0.025,
                         ),
+
+                        // Button atau Tombol "Heningkan"
                         GestureDetector(
                           onTap: () {
                             showHeningkanDialog(context);
