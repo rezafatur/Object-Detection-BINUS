@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:object_detection_app/app/modules/home/views/home_view.dart';
 import 'package:object_detection_app/core/theme/colors.dart';
 import 'package:object_detection_app/core/theme/text_theme.dart';
 import '../../../../core/utils/size.configs.dart';
@@ -106,8 +107,9 @@ class LoginView extends GetView<LoginController> {
                       width: sizeW,
                       child: ElevatedButton(
                         onPressed: () {
-                          controller.loginUser(
-                              emailController.text, passwordController.text);
+                          Get.to(
+                            () => HomeView(),
+                          );
                         },
                         style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
